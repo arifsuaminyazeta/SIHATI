@@ -1,1 +1,395 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SI-HATI - About Mental Health</title>
+  <link rel="stylesheet" href="../assets/css/style.css"/>
+</head>
+<body>
 
+<div class="navbar-top"></div>
+
+<nav class="navbar">
+  <div class="navbar-brand">
+    <img src="../assets/Image/logo.png" style="width:40px; height:40px; object-fit:contain;" />
+    <span class="brand-name">SI-HATI</span>
+  </div>
+
+  <ul class="nav-menu">
+    <li><a href="../views/index.html" class="nav-link">Beranda</a></li>
+    <li><a href="../views/about.html" class="nav-link active">About Mental Health</a></li>
+    <li><a href="#" class="nav-link" onclick="goProtected('relaksasi.html');return false;">Relaksasi Mandiri</a></li>
+    <li><a href="#" class="nav-link" onclick="goProtected('ediary.html');return false;">E-Diary</a></li>
+    <li><a href="#" class="nav-link" onclick="goProtected('info-kegiatan.html');return false;">Info Kegiatan</a></li>
+    <li><a href="#" class="nav-link" onclick="goProtected('kontak-darurat.html');return false;">Kontak Darurat</a></li>
+  </ul>
+
+  <div id="nav-auth-area"></div>
+</nav>
+
+<section class="hero">
+  <p class="hero-tag">Sistem Informasi Kesehatan Mental Terintegrasi</p>
+
+  <h1>About Mental Health</h1>
+
+  <p>
+    Kesehatan mental mencakup kondisi emosional, psikologis, dan sosial seseorang.
+    Kenali lebih jauh untuk menjaga dirimu dan orang-orang di sekitarmu.
+  </p>
+</section>
+
+<div class="breadcrumb">
+  Beranda &raquo; <span>About Mental Health</span>
+</div>
+
+<div class="container">
+
+  <p class="section-label">Topik Utama</p>
+
+  <div class="card-grid">
+
+    <div class="card" onclick="openModal('modal1')">
+
+      <div class="card-thumb thumb-green">
+        <img src="../assets/Image/1.png" alt="Kesehatan Mental" style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0;" />
+        <span class="thumb-label">Mental Health</span>
+      </div>
+
+      <div class="card-body">
+        <h3 class="card-title">Apa itu Kesehatan Mental?</h3>
+
+        <p class="card-desc">
+          Memahami pengertian, komponen, dan pentingnya kesehatan mental dalam kehidupan sehari-hari.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="card" onclick="openModal('modal2')">
+
+      <div class="card-thumb thumb-teal">
+        <img src="../assets/Image/2.png" alt="Stres & Kecemasan" style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0;" />
+        <span class="thumb-label">Stres & Kecemasan</span>
+      </div>
+
+      <div class="card-body">
+        <h3 class="card-title">Mengenal Stres & Kecemasan</h3>
+
+        <p class="card-desc">
+          Pelajari tanda-tanda stres dan kecemasan serta cara menghadapinya secara sehat.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="card" onclick="openModal('modal3')">
+
+      <div class="card-thumb thumb-rose">
+        <img src="../assets/Image/3.png" alt="Depresi" style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0;" />
+        <span class="thumb-label">Depresi</span>
+      </div>
+
+      <div class="card-body">
+        <h3 class="card-title">Memahami Depresi</h3>
+
+        <p class="card-desc">
+          Depresi bukan sekadar sedih. Kenali gejalanya, penyebab, dan langkah awal mencari bantuan.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="card" onclick="openModal('modal4')">
+
+      <div class="card-thumb thumb-amber">
+        <img src="../assets/Image/4.png" alt="Tips & Edukasi" style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0;" />
+        <span class="thumb-label">Tips & Edukasi</span>
+      </div>
+
+      <div class="card-body">
+        <h3 class="card-title">Tips Menjaga Kesehatan Mental</h3>
+
+        <p class="card-desc">
+          Panduan praktis menjaga kesehatan mental untuk mahasiswa dan remaja.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="card" onclick="openModal('modal5')">
+
+      <div class="card-thumb thumb-blue">
+        <img src="../assets/Image/5.png" alt="Minta Bantuan" style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0;" />
+        <span class="thumb-label">Minta Bantuan</span>
+      </div>
+
+      <div class="card-body">
+        <h3 class="card-title">Kapan Harus Mencari Bantuan?</h3>
+
+        <p class="card-desc">
+          Tanda-tanda kamu perlu bicara dengan profesional dan cara memulai langkah tersebut.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="card" onclick="openModal('modal6')">
+
+      <div class="card-thumb thumb-green">
+        <img src="../assets/Image/6.png" alt="Stigma" style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0;" />
+        <span class="thumb-label">Stigma</span>
+      </div>
+
+      <div class="card-body">
+        <h3 class="card-title">Melawan Stigma Mental</h3>
+
+        <p class="card-desc">
+          Mengapa stigma terhadap kesehatan mental masih ada dan bagaimana kita mengubahnya.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal1">
+  <div class="modal-box">
+
+    <button class="modal-close" onclick="closeModal('modal1')">
+      &times;
+    </button>
+
+    <p class="modal-tag">Mental Health</p>
+
+    <h2 class="modal-title">Apa itu Kesehatan Mental?</h2>
+
+    <div class="modal-body">
+      <p>
+        Kesehatan mental adalah kondisi di mana seseorang dapat menyadari potensinya,
+        mampu menghadapi tekanan kehidupan normal, bekerja secara produktif,
+        dan berkontribusi pada komunitasnya.
+      </p>
+
+      <p>
+        Kesehatan mental mencakup dimensi emosional,
+        psikologis, dan sosial.
+      </p>
+
+      <p>
+        Sama seperti kesehatan fisik,
+        kesehatan mental bisa berubah sewaktu-waktu.
+      </p>
+
+      <p><strong>Tanda kesehatan mental yang baik:</strong></p>
+
+      <p>
+        Mampu mengelola stres,
+        memiliki hubungan sosial yang positif,
+        dan nyaman dengan diri sendiri.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal2">
+  <div class="modal-box">
+
+    <button class="modal-close" onclick="closeModal('modal2')">
+      &times;
+    </button>
+
+    <p class="modal-tag">Stres & Kecemasan</p>
+
+    <h2 class="modal-title">Mengenal Stres & Kecemasan</h2>
+
+    <div class="modal-body">
+
+      <p>
+        Stres adalah respons tubuh terhadap tekanan.
+      </p>
+
+      <p>
+        Kecemasan adalah rasa takut atau khawatir
+        yang muncul terhadap suatu ancaman.
+      </p>
+
+      <p>
+        <strong>Gejala:</strong>
+        sulit tidur,
+        mudah marah,
+        sulit fokus,
+        dan mudah lelah.
+      </p>
+
+      <p>
+        <strong>Cara mengelola:</strong>
+        olahraga,
+        tidur cukup,
+        dan relaksasi.
+      </p>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal3">
+  <div class="modal-box">
+
+    <button class="modal-close" onclick="closeModal('modal3')">
+      &times;
+    </button>
+
+    <p class="modal-tag">Depresi</p>
+
+    <h2 class="modal-title">Memahami Depresi</h2>
+
+    <div class="modal-body">
+
+      <p>
+        Depresi adalah gangguan suasana hati
+        yang memengaruhi aktivitas sehari-hari.
+      </p>
+
+      <p>
+        <strong>Gejala:</strong>
+        sedih berkepanjangan,
+        kehilangan minat,
+        dan kelelahan ekstrem.
+      </p>
+
+      <p>
+        Depresi bukan kelemahan
+        dan dapat ditangani dengan bantuan profesional.
+      </p>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal4">
+  <div class="modal-box">
+
+    <button class="modal-close" onclick="closeModal('modal4')">
+      &times;
+    </button>
+
+    <p class="modal-tag">Tips & Edukasi</p>
+
+    <h2 class="modal-title">Tips Menjaga Kesehatan Mental</h2>
+
+    <div class="modal-body">
+
+      <p><strong>1.</strong> Tidur cukup.</p>
+      <p><strong>2.</strong> Olahraga teratur.</p>
+      <p><strong>3.</strong> Batasi media sosial.</p>
+      <p><strong>4.</strong> Bangun koneksi sosial.</p>
+      <p><strong>5.</strong> Praktikkan mindfulness.</p>
+      <p><strong>6.</strong> Jangan takut meminta bantuan.</p>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal5">
+  <div class="modal-box">
+
+    <button class="modal-close" onclick="closeModal('modal5')">
+      &times;
+    </button>
+
+    <p class="modal-tag">Minta Bantuan</p>
+
+    <h2 class="modal-title">Kapan Harus Mencari Bantuan?</h2>
+
+    <div class="modal-body">
+
+      <p>
+        Bantuan profesional diperlukan jika kondisi emosional
+        mulai mengganggu aktivitas sehari-hari.
+      </p>
+
+      <p>
+        Kamu bisa berbicara dengan orang terpercaya,
+        konselor,
+        atau layanan kesehatan mental.
+      </p>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal6">
+  <div class="modal-box">
+
+    <button class="modal-close" onclick="closeModal('modal6')">
+      &times;
+    </button>
+
+    <p class="modal-tag">Stigma</p>
+
+    <h2 class="modal-title">Melawan Stigma Mental</h2>
+
+    <div class="modal-body">
+
+      <p>
+        Stigma membuat banyak orang takut mencari bantuan.
+      </p>
+
+      <p>
+        Gangguan mental adalah kondisi medis,
+        bukan kelemahan pribadi.
+      </p>
+
+      <p>
+        Edukasi dan empati dapat membantu
+        mengurangi stigma kesehatan mental.
+      </p>
+
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+
+  <div>
+    <div class="footer-brand">SI-HATI</div>
+    <p>&copy; 2026 Sistem Informasi Kesehatan Mental Terintegrasi</p>
+  </div>
+
+  <div class="footer-links">
+    <a href="../views/index.html">Beranda</a>
+    <a href="#">Kebijakan Privasi</a>
+    <a href="#">Kontak</a>
+  </div>
+
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script src="../assets/js/script.js"></script>
+
+<script>
+  function openModal(id) {
+    document.getElementById(id).classList.add("open");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeModal(id) {
+    document.getElementById(id).classList.remove("open");
+    document.body.style.overflow = "";
+  }
+
+  document.querySelectorAll(".modal-overlay").forEach(function(el) {
+    el.addEventListener("click", function(e) {
+      if (e.target === el) {
+        closeModal(el.id);
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
